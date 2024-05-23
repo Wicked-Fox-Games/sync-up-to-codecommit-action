@@ -1,6 +1,6 @@
-FROM alpine:3
+FROM amazon/aws-cli:latest
 
-RUN apk --update --no-cache add git aws-cli
+RUN yum install git
 
 COPY entrypoint.sh /entrypoint.sh
 

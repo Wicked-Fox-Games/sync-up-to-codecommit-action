@@ -1,6 +1,6 @@
 FROM amazon/aws-cli:latest
 
-RUN yum install git
+RUN yum install git -y
 
 COPY entrypoint.sh /entrypoint.sh
 
